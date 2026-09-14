@@ -27,6 +27,8 @@ a { color: inherit; text-decoration: none; }
 .social-links a { align-items: center; display: inline-flex; justify-content: center; }
 .social-links svg { fill: currentColor; height: 17px; transition: transform .2s ease; width: 17px; }
 .social-links a:hover svg { transform: translateY(-2px); }
+.social-links .fiverr-link { font-size: 14px; font-weight: 800; letter-spacing: -.08em; line-height: 1; }
+.social-links .fiverr-link span { color: var(--lime); }
 .header-cta { border-bottom: 1px solid var(--lime); color: var(--paper); padding-bottom: 8px; }
 .menu-toggle { display: none; }
 .section-shell { margin: auto; max-width: 1440px; padding-left: clamp(24px, 10vw, 166px); padding-right: clamp(24px, 10vw, 166px); }
