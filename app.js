@@ -13,6 +13,32 @@ nav?.querySelectorAll('a').forEach((link) => {
   });
 });
 
+const resumeButton = document.querySelector('#resume-button');
+const resumeDialog = document.querySelector('#resume-dialog');
+const resumeCloseButton = resumeDialog?.querySelector('.resume-dialog-close');
+
+const closeResume = () => {
+  resumeDialog?.close();
+  resumeButton?.setAttribute('aria-expanded', 'false');
+  resumeButton?.focus();
+};
+
+resumeButton?.addEventListener('click', () => {
+  resumeDialog?.showModal();
+  resumeButton.setAttribute('aria-expanded', 'true');
+  resumeCloseButton?.focus();
+});
+
+resumeCloseButton?.addEventListener('click', closeResume);
+
+resumeDialog?.addEventListener('click', (event) => {
+  if (event.target === resumeDialog) closeResume();
+});
+
+resumeDialog?.addEventListener('cancel', () => {
+  resumeButton?.setAttribute('aria-expanded', 'false');
+});
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {

@@ -35,7 +35,7 @@
         </a>
         <a class="fiverr-link" href="https://www.fiverr.com/neyazshaikh/" target="_blank" rel="noreferrer" aria-label="Fiverr profile" title="Fiverr">fi<span>.</span></a>
       </div>
-      <a class="header-cta" href="assets/documents/niyazalam_resume.pdf" download="niyazalam_resume.pdf">Download résumé <span aria-hidden="true">↓</span></a>
+      <button class="header-cta" id="resume-button" type="button" aria-haspopup="dialog" aria-controls="resume-dialog" aria-expanded="false">View résumé <span aria-hidden="true">↗</span></button>
     </header>
 
     <main>
@@ -128,6 +128,15 @@
         </div>
       </section>
     </main>
+    <dialog class="resume-dialog" id="resume-dialog" aria-labelledby="resume-dialog-title">
+      <div class="resume-dialog-content">
+        <div class="resume-dialog-header">
+          <h2 id="resume-dialog-title">Niyazalam Shaikh — Résumé</h2>
+          <button class="resume-dialog-close" type="button" aria-label="Close résumé viewer">×</button>
+        </div>
+        <iframe src="assets/documents/niyazalam_resume.pdf" title="Niyazalam Shaikh résumé"></iframe>
+      </div>
+    </dialog>
     <script src="app.js"></script>
   </body>
 </html>
