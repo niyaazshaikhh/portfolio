@@ -14,7 +14,10 @@ A static personal portfolio site.
 │   └── read.css               # Reading page styles
 └── assets/
     ├── documents/             # Downloadable résumé
-    └── images/                # Profile image and favicon
+    └── images/
+        ├── profile_picture.jpg
+        ├── favicon.svg
+        └── read-icons/        # Replaceable ebook resource icons
 ```
 
 Open `index.html` in a browser to preview the site.
