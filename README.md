@@ -12,13 +12,17 @@ A static personal portfolio site.
 ├── read/
 │   ├── index.html             # Ebook landscape monitoring brief (/read/)
 │   └── read.css               # Reading page styles
+├── stream/
+│   ├── index.html             # Video and OTT monitoring brief (/stream/)
+│   └── stream.css             # Streaming page responsive styles
 └── assets/
     ├── documents/             # Downloadable résumé
     └── images/
         ├── profile_picture.jpg
         ├── favicon.svg
         ├── read-icons/        # Replaceable ebook resource icons
-        └── ebook-landscape-illustration.svg
+        ├── ebook-landscape-illustration.svg
+        └── stream-landscape-illustration.svg
 ```
 
 Open `index.html` in a browser to preview the site.
