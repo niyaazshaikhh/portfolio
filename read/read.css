@@ -202,6 +202,28 @@
 .workflow-list p { color: var(--brief-muted); font-size: 10px; line-height: 1.6; margin: 0; }
 .legal-note { border-left: 3px solid var(--brief-amber); color: var(--brief-muted); font-size: 10px; line-height: 1.7; margin: 28px 0 0; max-width: 850px; padding-left: 15px; }
 
+.source-copy-dialog {
+  background: var(--brief-paper);
+  border: 0;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, .42);
+  color: var(--brief-ink);
+  max-width: 540px;
+  padding: 0;
+  width: calc(100vw - 32px);
+}
+.source-copy-dialog::backdrop { backdrop-filter: blur(4px); background: rgba(7, 14, 24, .76); }
+.copy-dialog-header { align-items: center; background: var(--brief-panel); color: var(--brief-paper); display: flex; justify-content: space-between; padding: 19px 22px; }
+.copy-dialog-header p { color: var(--brief-amber); font-family: var(--mono); font-size: 8px; letter-spacing: .08em; margin: 0 0 5px; text-transform: uppercase; }
+.copy-dialog-header h2 { font-size: 19px; font-weight: 600; letter-spacing: -.04em; margin: 0; }
+.copy-dialog-close { align-items: center; border: 1px solid rgba(244, 241, 234, .35); color: var(--brief-paper); cursor: pointer; display: flex; font-size: 22px; height: 32px; justify-content: center; line-height: 1; padding: 0 0 3px; transition: background .18s ease, color .18s ease; width: 32px; }
+.copy-dialog-close:hover { background: var(--brief-amber); color: var(--brief-ink); }
+.copy-dialog-row { align-items: stretch; display: grid; gap: 9px; grid-template-columns: minmax(0, 1fr) auto; padding: 20px 22px 8px; }
+.copy-dialog-row textarea { background: #fffdf8; border: 1px solid rgba(16, 24, 38, .18); border-radius: 2px; color: var(--brief-ink); font-family: var(--mono); font-size: 10px; line-height: 1.6; min-width: 0; padding: 11px; resize: none; }
+.copy-dialog-action { align-items: center; align-self: stretch; background: var(--brief-amber); color: var(--brief-ink); cursor: pointer; display: inline-flex; font-family: var(--mono); font-size: 9px; gap: 10px; justify-content: center; letter-spacing: .04em; min-width: 82px; padding: 0 13px; text-transform: uppercase; transition: background .18s ease; }
+.copy-dialog-action:hover { background: #efbd4b; }
+.copy-dialog-action b { font-size: 15px; font-weight: 400; }
+.copy-dialog-feedback { color: var(--brief-green); font-family: var(--mono); font-size: 8px; min-height: 25px; padding: 6px 22px 12px; }
+
 .reading-footer {
   align-items: center;
   border-top: 1px solid rgba(244, 241, 234, .2);
@@ -256,6 +278,11 @@
   .enforcement-grid { grid-template-columns: 1fr; }
   .workflow-list { grid-template-columns: 1fr; }
   .workflow-list li { min-height: auto; }
+  .copy-dialog-header { padding: 16px 17px; }
+  .copy-dialog-row { gap: 7px; padding: 16px 17px 8px; }
+  .copy-dialog-row textarea { font-size: 9px; padding: 9px; }
+  .copy-dialog-action { gap: 6px; min-width: 72px; padding: 0 9px; }
+  .copy-dialog-feedback { padding-left: 17px; }
   .reading-footer { align-items: flex-start; flex-wrap: wrap; gap: 13px; }
   .reading-footer > span { order: 3; width: 100%; }
 }
