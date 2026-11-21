@@ -215,14 +215,16 @@
 .copy-dialog-header { align-items: center; background: var(--brief-panel); color: var(--brief-paper); display: flex; justify-content: space-between; padding: 19px 22px; }
 .copy-dialog-header p { color: var(--brief-amber); font-family: var(--mono); font-size: 8px; letter-spacing: .08em; margin: 0 0 5px; text-transform: uppercase; }
 .copy-dialog-header h2 { font-size: 19px; font-weight: 600; letter-spacing: -.04em; margin: 0; }
-.copy-dialog-close { align-items: center; border: 1px solid rgba(244, 241, 234, .35); color: var(--brief-paper); cursor: pointer; display: flex; font-size: 22px; height: 32px; justify-content: center; line-height: 1; padding: 0 0 3px; transition: background .18s ease, color .18s ease; width: 32px; }
-.copy-dialog-close:hover { background: var(--brief-amber); color: var(--brief-ink); }
-.copy-dialog-row { align-items: stretch; display: grid; gap: 9px; grid-template-columns: minmax(0, 1fr) auto; padding: 20px 22px 8px; }
-.copy-dialog-row textarea { background: #fffdf8; border: 1px solid rgba(16, 24, 38, .18); border-radius: 2px; color: var(--brief-ink); font-family: var(--mono); font-size: 10px; line-height: 1.6; min-width: 0; padding: 11px; resize: none; }
+.copy-dialog-close { align-items: center; background: var(--brief-amber); border: 1px solid var(--brief-amber); border-radius: 50%; color: var(--brief-ink); cursor: pointer; display: flex; font-family: var(--sans); font-size: 21px; font-weight: 700; height: 34px; justify-content: center; line-height: 1; opacity: 1; padding: 0 0 3px; transition: background .18s ease, transform .18s ease; visibility: visible; width: 34px; }
+.copy-dialog-close:hover { background: #efbd4b; transform: rotate(4deg); }
+.copy-dialog-close:focus-visible { outline: 2px solid var(--brief-paper); outline-offset: 3px; }
+.copy-record-list { display: flex; flex-direction: column; gap: 8px; max-height: min(56vh, 460px); overflow-y: auto; padding: 20px 22px 10px; }
+.copy-record-row { align-items: stretch; background: var(--brief-stone); border: 1px solid rgba(16, 24, 38, .12); display: grid; gap: 10px; grid-template-columns: minmax(0, 1fr) auto; padding: 11px; }
+.copy-record-value { align-self: center; color: var(--brief-ink); font-family: var(--mono); font-size: 10px; line-height: 1.6; margin: 0; overflow-wrap: anywhere; }
 .copy-dialog-action { align-items: center; align-self: stretch; background: var(--brief-amber); color: var(--brief-ink); cursor: pointer; display: inline-flex; font-family: var(--mono); font-size: 9px; gap: 10px; justify-content: center; letter-spacing: .04em; min-width: 82px; padding: 0 13px; text-transform: uppercase; transition: background .18s ease; }
 .copy-dialog-action:hover { background: #efbd4b; }
 .copy-dialog-action b { font-size: 15px; font-weight: 400; }
-.copy-dialog-feedback { color: var(--brief-green); font-family: var(--mono); font-size: 8px; min-height: 25px; padding: 6px 22px 12px; }
+.copy-record-status { color: var(--brief-green); font-family: var(--mono); font-size: 8px; grid-column: 1 / -1; line-height: 1.4; min-height: 0; }
 
 .reading-footer {
   align-items: center;
@@ -279,10 +281,10 @@
   .workflow-list { grid-template-columns: 1fr; }
   .workflow-list li { min-height: auto; }
   .copy-dialog-header { padding: 16px 17px; }
-  .copy-dialog-row { gap: 7px; padding: 16px 17px 8px; }
-  .copy-dialog-row textarea { font-size: 9px; padding: 9px; }
+  .copy-record-list { gap: 7px; padding: 16px 17px 10px; }
+  .copy-record-row { gap: 7px; padding: 9px; }
+  .copy-record-value { font-size: 9px; }
   .copy-dialog-action { gap: 6px; min-width: 72px; padding: 0 9px; }
-  .copy-dialog-feedback { padding-left: 17px; }
   .reading-footer { align-items: flex-start; flex-wrap: wrap; gap: 13px; }
   .reading-footer > span { order: 3; width: 100%; }
 }
