@@ -1,0 +1,34 @@
+.blogs-hero { min-height: 520px; }
+.blogs-hero .hero-reference { max-width: 430px; }
+.blog-list { padding-bottom: clamp(80px, 11vw, 140px); padding-top: clamp(75px, 10vw, 125px); }
+.blog-grid { display: grid; gap: 16px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.blog-card {
+  background: var(--brief-panel);
+  border-top: 4px solid var(--brief-amber);
+  color: var(--brief-paper);
+  display: flex;
+  flex-direction: column;
+  min-height: 430px;
+  text-decoration: none;
+  transition: border-color .2s ease, transform .2s ease, background .2s ease;
+}
+.blog-card:hover, .blog-card:focus-visible { background: #253550; border-color: #efbd4b; transform: translateY(-3px); }
+.blog-card:focus-visible { outline: 2px solid var(--brief-paper); outline-offset: 3px; }
+.blog-card-art { align-items: center; background: #172338; display: flex; justify-content: space-between; min-height: 185px; overflow: hidden; padding: 16px 24px; }
+.blog-card-art img { height: 158px; object-fit: contain; width: 158px; }
+.blog-card-art span { color: var(--brief-amber); font-family: var(--mono); font-size: 9px; letter-spacing: .12em; }
+.blog-card-copy { display: flex; flex: 1; flex-direction: column; padding: 25px 28px 28px; }
+.blog-card-index { color: var(--brief-amber); font-family: var(--mono); font-size: 8px; letter-spacing: .08em; margin: 0 0 13px; text-transform: uppercase; }
+.blog-card-copy h3 { font-size: clamp(21px, 2.6vw, 30px); font-weight: 600; letter-spacing: -.05em; line-height: 1.15; margin: 0; }
+.blog-card-copy > p:not(.blog-card-index) { color: var(--brief-muted); font-size: 12px; line-height: 1.7; margin: 13px 0 24px; max-width: 490px; }
+.blog-card-link { align-items: center; border-top: 1px solid rgba(244, 241, 234, .2); color: var(--brief-paper); display: flex; font-family: var(--mono); font-size: 9px; justify-content: space-between; letter-spacing: .06em; margin-top: auto; padding-top: 15px; text-transform: uppercase; }
+.blog-card-link b { color: var(--brief-amber); font-size: 14px; font-weight: 400; }
+
+@media (max-width: 760px) {
+  .blogs-hero { min-height: auto; }
+  .blog-grid { grid-template-columns: 1fr; }
+  .blog-card { min-height: 390px; }
+  .blog-card-art { min-height: 155px; }
+  .blog-card-art img { height: 130px; width: 130px; }
+  .blog-card-copy { padding: 22px; }
+}

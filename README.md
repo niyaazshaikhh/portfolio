@@ -10,11 +10,18 @@ A static personal portfolio site.
 ├── styles.css                 # Responsive styles
 ├── app.js                     # Navigation and name typing animation
 ├── read/
-│   ├── index.html             # Ebook landscape monitoring brief (/read/)
-│   └── read.css               # Reading page styles
+│   └── index.html             # Legacy redirect to /blogs/read/
 ├── stream/
-│   ├── index.html             # Video and OTT monitoring brief (/stream/)
-│   └── stream.css             # Streaming page responsive styles
+│   └── index.html             # Legacy redirect to /blogs/stream/
+├── blogs/
+│   ├── index.html             # Blogs hub (/blogs/)
+│   ├── blogs.css              # Blog cards and responsive layout
+│   ├── read/
+│   │   ├── index.html         # Ebook monitoring brief (/blogs/read/)
+│   │   └── read.css           # Shared monitoring brief styles
+│   └── stream/
+│       ├── index.html         # Video and OTT brief (/blogs/stream/)
+│       └── stream.css         # Streaming page responsive styles
 └── assets/
     ├── documents/             # Downloadable résumé
     └── images/
