@@ -4,11 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfolio of Niyazalam Shaikh — IT graduate and builder of practical software." />
+    <meta name="theme-color" content="#07131b" />
     <title>Niyazalam Shaikh | Portfolio</title>
     <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script>
+      try {
+        if (localStorage.getItem("portfolio-theme") === "light") {
+          document.documentElement.dataset.theme = "light";
+          document.querySelector('meta[name="theme-color"]')?.setAttribute("content", "#f5f7f2");
+        }
+      } catch {}
+    </script>
     <link rel="stylesheet" href="/assets/css/main.css" />
   </head>
   <body>
@@ -40,6 +49,10 @@
         <a class="fiverr-link" href="https://www.fiverr.com/neyazshaikh/" target="_blank" rel="noreferrer" aria-label="Fiverr profile" title="Fiverr">fi<span>.</span></a>
       </div>
       <button class="header-cta" id="resume-button" type="button" aria-haspopup="dialog" aria-controls="resume-dialog" aria-expanded="false">View résumé <span aria-hidden="true">↗</span></button>
+      <button class="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch to light mode" aria-pressed="false">
+        <svg class="theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" /></svg>
+        <svg class="theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.7 14.2A8.5 8.5 0 0 1 9.8 3.3 8.6 8.6 0 1 0 20.7 14.2Z" /></svg>
+      </button>
     </header>
 
     <main>

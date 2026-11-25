@@ -16,6 +16,8 @@
 .article-header .nav-links a[aria-current] { color: var(--article-amber); }
 .article-contact { margin-left: auto; }
 .article-contact span { color: var(--article-amber); }
+.article-page .theme-toggle { border-color: rgba(244, 241, 234, .22); color: var(--article-paper); }
+.article-page .theme-toggle:hover { background: var(--article-amber); border-color: var(--article-amber); color: var(--article-ink); }
 .article-main { padding-top: 94px; }
 .article-main > section[id] { scroll-margin-top: 24px; }
 .article-contents {
@@ -320,3 +322,51 @@
   .status-pill { font-size: 6px; }
   .cycle-grid { grid-template-columns: 1fr; }
 }
+
+html[data-theme="light"] .article-page {
+  --ink: #f5f7f2;
+  --paper: #17252c;
+  --muted: #59686e;
+  --lime: #50751d;
+  --article-ink: #f5f7f2;
+  --article-panel: #ffffff;
+  --article-paper: #17252c;
+  --article-stone: #e9eee8;
+  --article-amber: #8a6200;
+  --article-muted: #59686e;
+  --article-green: #21664e;
+  --article-red: #9b4038;
+  --article-slate: #627187;
+  background: var(--article-ink);
+  color: var(--article-paper);
+}
+html[data-theme="light"] .article-page .overview-section,
+html[data-theme="light"] .article-page .sources-section,
+html[data-theme="light"] .article-page .enforcement-section {
+  background: #e8ede7;
+  color: #17252c;
+}
+html[data-theme="light"] .article-page .count-card,
+html[data-theme="light"] .article-page .source-category,
+html[data-theme="light"] .article-page .cycle-grid article,
+html[data-theme="light"] .article-page .enforcement-grid article,
+html[data-theme="light"] .article-page .workflow-list li { background: #ffffff; }
+html[data-theme="light"] .article-page .source-entry { background: #f1f4ef; color: #17252c; }
+html[data-theme="light"] .article-page .source-entry:hover { background: #ffffff; }
+html[data-theme="light"] .article-page .comparison-wrap,
+html[data-theme="light"] .article-page .comparison-table th,
+html[data-theme="light"] .article-page .comparison-table td { border-color: rgba(23, 37, 44, .16); }
+html[data-theme="light"] .article-page .comparison-table thead th { background: rgba(23, 37, 44, .045); }
+html[data-theme="light"] .article-page .hero-bottomline,
+html[data-theme="light"] .article-page .article-contents,
+html[data-theme="light"] .article-page .article-footer { border-color: rgba(23, 37, 44, .17); }
+html[data-theme="light"] .article-page .article-contents a { border-color: rgba(23, 37, 44, .2); }
+html[data-theme="light"] .article-page .article-card:hover,
+html[data-theme="light"] .article-page .article-card:focus-visible { background: #f1f4ef; }
+html[data-theme="light"] .article-page .article-card-link { border-color: rgba(23, 37, 44, .18); }
+html[data-theme="light"] .article-page .article-card-art span { color: #f0bd4b; }
+html[data-theme="light"] .article-page .theme-toggle:hover { color: #17252c; }
+html[data-theme="light"] .article-page .theme-toggle { border-color: rgba(23, 37, 44, .2); }
+html[data-theme="light"] .article-page .source-copy-dialog { background: #ffffff; color: #17252c; }
+html[data-theme="light"] .article-page .copy-record-value { color: #17252c; }
+html[data-theme="light"] .article-page .copy-dialog-action { color: #17252c; }
