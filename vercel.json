@@ -1,14 +1,24 @@
 {
   "redirects": [
-    { "source": "/blogs", "destination": "/briefs/", "statusCode": 301 },
-    { "source": "/blogs/", "destination": "/briefs/", "statusCode": 301 },
-    { "source": "/blogs/read", "destination": "/briefs/reading/", "statusCode": 301 },
-    { "source": "/blogs/read/", "destination": "/briefs/reading/", "statusCode": 301 },
-    { "source": "/read", "destination": "/briefs/reading/", "statusCode": 301 },
-    { "source": "/read/", "destination": "/briefs/reading/", "statusCode": 301 },
-    { "source": "/blogs/stream", "destination": "/briefs/streaming/", "statusCode": 301 },
-    { "source": "/blogs/stream/", "destination": "/briefs/streaming/", "statusCode": 301 },
-    { "source": "/stream", "destination": "/briefs/streaming/", "statusCode": 301 },
-    { "source": "/stream/", "destination": "/briefs/streaming/", "statusCode": 301 }
+    { "source": "/blogs", "destination": "/articles/", "statusCode": 301 },
+    { "source": "/blogs/", "destination": "/articles/", "statusCode": 301 },
+    { "source": "/blogs/read", "destination": "/articles/ebook-piracy-landscape/", "statusCode": 301 },
+    { "source": "/blogs/read/", "destination": "/articles/ebook-piracy-landscape/", "statusCode": 301 },
+    { "source": "/read", "destination": "/articles/ebook-piracy-landscape/", "statusCode": 301 },
+    { "source": "/read/", "destination": "/articles/ebook-piracy-landscape/", "statusCode": 301 },
+    { "source": "/blogs/stream", "destination": "/articles/video-ott-piracy-landscape/", "statusCode": 301 },
+    { "source": "/blogs/stream/", "destination": "/articles/video-ott-piracy-landscape/", "statusCode": 301 },
+    { "source": "/stream", "destination": "/articles/video-ott-piracy-landscape/", "statusCode": 301 },
+    { "source": "/stream/", "destination": "/articles/video-ott-piracy-landscape/", "statusCode": 301 },
+    { "source": "/briefs", "destination": "/articles/", "statusCode": 301 },
+    { "source": "/briefs/", "destination": "/articles/", "statusCode": 301 },
+    { "source": "/briefs/reading", "destination": "/articles/ebook-piracy-landscape/", "statusCode": 301 },
+    { "source": "/briefs/reading/", "destination": "/articles/ebook-piracy-landscape/", "statusCode": 301 },
+    { "source": "/briefs/streaming", "destination": "/articles/video-ott-piracy-landscape/", "statusCode": 301 },
+    { "source": "/briefs/streaming/", "destination": "/articles/video-ott-piracy-landscape/", "statusCode": 301 },
+    { "source": "/briefs/ebook-piracy-landscape", "destination": "/articles/ebook-piracy-landscape/", "statusCode": 301 },
+    { "source": "/briefs/ebook-piracy-landscape/", "destination": "/articles/ebook-piracy-landscape/", "statusCode": 301 },
+    { "source": "/briefs/video-ott-piracy-landscape", "destination": "/articles/video-ott-piracy-landscape/", "statusCode": 301 },
+    { "source": "/briefs/video-ott-piracy-landscape/", "destination": "/articles/video-ott-piracy-landscape/", "statusCode": 301 }
   ]
 }

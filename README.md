@@ -12,9 +12,9 @@ A static personal portfolio site.
 ├── assets/
 │   ├── css/
 │   │   ├── main.css          # Shared responsive styles
-│   │   ├── briefs.css        # Briefs hub layout
-│   │   ├── reading.css       # Shared brief styles
-│   │   └── streaming.css     # Streaming page styles
+│   │   ├── articles.css        # Articles hub layout
+│   │   ├── article.css       # Shared article styles
+│   │   └── video-ott.css     # Video and OTT article styles
 │   ├── js/
 │   │   └── app.js            # Navigation and name typing animation
 │   ├── documents/
@@ -22,17 +22,18 @@ A static personal portfolio site.
 │   └── images/
 │       ├── favicon.svg
 │       ├── profile_picture.jpg
+│       ├── articles-linkedin-feature-banner.png
 │       ├── ebook-landscape-illustration.svg
 │       ├── stream-landscape-illustration.svg
 │       └── read-icons/
 │           ├── AnnasArchive.png
 │           └── resource-placeholder.svg
-└── briefs/
-    ├── index.html            # Briefs hub (/briefs/)
-    ├── reading/
-    │   └── index.html        # Ebook monitoring brief
-    └── streaming/
-        └── index.html        # Video and OTT brief
+└── articles/
+    ├── index.html            # Articles hub (/articles/)
+    ├── ebook-piracy-landscape/
+    │   └── index.html        # Ebook piracy article
+    └── video-ott-piracy-landscape/
+        └── index.html        # Video and OTT article
 ```
 
 Open `index.html` in a browser to preview the site.
